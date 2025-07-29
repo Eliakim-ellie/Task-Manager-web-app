@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task Manager UI</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="app-container">
+    <header class="top-bar">
+      <div class="left-icons">
+        <button class="icon-btn">☰</button>
+      </div>
+      <div class="right-icons">
+        <button class="icon-btn">🔔</button>
+        <img src="https://i.pravatar.cc/32" alt="Profile" class="avatar"/>
+      </div>
+    </header>
+
+    <section class="greeting">
+      <h2>Hello Predev!</h2>
+      <h1>Good Morning</h1>
+      <p>You’ve to complete <strong>4 tasks</strong> today.</p>
+    </section>
+
+    <nav class="tab-bar">
+      <span class="active">Tasks (12)</span>
+      <span>Reminders (3)</span>
+    </nav>
+
+    <div class="date-selector">
+      <span class="selected">Monday <small>16 Jan, 2023</small></span>
+      <div class="days">
+        <span>Tue</span><span>Wed</span><span>Thu</span>
+        <span>Fri</span><span>Sat</span><span>Sun</span>
+      </div>
+    </div>
+
+    <main class="tasks">
+      <div class="task-card blue">
+        <div class="task-info">
+          <h3>UI design</h3>
+          <p>Create design for notes, tasks 7 Reminders application.</p>
+          <div class="labels">
+            <span class="tag">work</span>
+            <span class="due">Due : 6:30 PM</span>
+          </div>
+        </div>
+        <img src="https://i.pravatar.cc/32" class="avatar small" alt="User"/>
+      </div>
+
+      <div class="task-card yellow">
+        <div class="task-info">
+          <h3>Services</h3>
+          <p>Find our service details below.</p>
+          <div class="labels">
+            <span class="tag">#ctwebsite</span>
+            <span class="due">Due : 6:30 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="task-card green">
+        <div class="task-info">
+          <h3>Wireframing</h3>
+          <p>Create design for notes, tasks 7 Reminders application.</p>
+        </div>
+        <button class="add-btn">＋</button>
+      </div>
+    </main>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
